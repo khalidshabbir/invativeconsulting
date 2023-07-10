@@ -1,0 +1,40 @@
+.topbar{
+    background-color: var(--secondary);
+}
+.topbarp{
+    font-size: 12px;
+}
+.social_icon{ 
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--topbarcolor);
+}
+.social_icon:nth-child(3):hover{
+    background-color:#3c5997 ;
+    transition: 0.3s ease-in-out;
+}
+.social_icon:nth-child(1):hover{
+    background-color:#D84B3B ;
+    transition: 0.3s ease-in-out;
+}
+.social_icon:nth-child(5):hover{
+    background-color:#05aced ;
+    transition: 0.3s ease-in-out;
+}
+.social_icon:nth-child(2):hover{
+    background-color:#027BB6;
+    transition: 0.3s ease-in-out;
+}
+.social_icon:nth-child(4):hover{
+    background-color:#F6046B ;
+    transition: 0.3s ease-in-out;
+}
+.social_icon:nth-child(6):hover{
+    background-color:#3bcf48;
+    transition: 0.3s ease-in-out;
+}

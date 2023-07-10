@@ -1,0 +1,90 @@
+
+:root{
+  --secondary :#2f363a;
+  --topbarcolor:#474d51;
+  --primary:#01ABC8;
+  --hovercolor:#003F4A;
+  
+}
+a{
+  text-decoration: none !important;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  overflow-y: auto !important;
+ 
+
+}
+.bg-dark{
+  background-color: #2F363A !important;
+}
+.sticky-top {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1020 !important;
+}
+.section{
+  padding: 0px !important;
+}
+li{
+  list-style: none;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.drawer_wrapper{
+  min-width: 200px;
+  max-height: 60px;
+  
+}
+.btn{
+  padding: 10px 30px !important;
+  transition: 0.3s ease-in-out !important;
+  border-radius: 2px !important;
+}
+.btn-primary{
+  background-color: var(--primary) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.btn-primary:hover{
+background-color: var(--hovercolor) !important;
+}
+.btn-secondary{
+  background-color: transparent !important;
+  border: 2px solid white !important;
+  box-shadow:  none !important;
+  
+}
+.btn-secondary:hover{
+  background-color: var(--primary) !important;
+  border: 2px solid var(--primary) !important;
+}
+
+
+/* ==========================Scroll Bar====================== */
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary); 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+} 

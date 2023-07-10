@@ -1,0 +1,84 @@
+.process__second {
+    background-color: #2e363a;
+    color: #fff;
+  }
+  .Header.open {
+    background-color: var(--primary) /* or any other color you want when the accordion is open */
+}
+
+  .accordion-button {
+    background-color: unset !important;
+    color: #fff;
+    font-weight: 700;
+    border: none !important;
+    outline: unset;
+    display: none;
+  }
+  .accordion-button::after {
+    content: none !important; /* Remove the default icon */
+  }
+  .accordion-item.show .accordion-header button {
+    background-color: red !important;
+}
+  
+  .accordion-button:focus {
+    z-index: 3;
+    border-color: unset !important;
+    outline: 0;
+    box-shadow: unset !important;
+  }
+  
+  .accordion  {
+    background-color: unset;
+  }
+  .img-responsive{
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .accordion-item {
+    background-color: unset !important;
+    border: unset !important;
+    margin-block: 10px;
+  }
+  
+  
+  
+  .accordion-header {
+    background-color: #4a5459;
+    display: block;
+    width: 100%;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    display: flex;
+    align-items: center;
+  }
+  
+  .accordion-header:hover {
+    background: #00abc9;
+  }
+  
+  .accordion-collapse {
+    background-color: unset !important;
+    color: #fff;
+  }
+  
+  .accordion-body {
+    margin-top: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 5px 25px;
+    margin-left: 20px;
+  }
+  
+  .accordion-process{
+    display: block !important;
+  }
+  .accordion-button:not(.collapsed) {
+    color: white !important;
+    background-color: #01ABC8 !important;
+    box-shadow: unset !important;
+    border-radius: 25px !important; 
+  }
+  
