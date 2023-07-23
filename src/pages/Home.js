@@ -18,14 +18,14 @@ const Home = () => {
       {/* =================================== */}
       <div className="py-5 my-5">
         <div className="container px-lg-5">
-          <div className="row clearfix justify-content-center align-items-center">
+          <div className="row clearfix d-flex align-items-center">
             <article className="col-md-6 col-lg-3 thumbnail-style thumbnail-icon-item text-center">
               <div className="thumbnail">
                 <img src="images/Services/1.png" alt="img" />
                 <div className="caption">
-                  <h4>Financial Planning</h4>
+                  <h4>Accounting & Bookkeeping</h4>
                   <p>
-                    Quisque pulvinar libero dolor, quis bibendum eros euismod sit amet. Proin dapibus id diam at
+                  Streamline financial processes with expert accounting and bookkeeping services for accurate and organized business records.
                   </p>
                 </div>
               </div>
@@ -34,9 +34,9 @@ const Home = () => {
               <div className="thumbnail">
                 <img className="img-icon-thumbnail" src="images/Services/2.png" alt="img" />
                 <div className="caption">
-                  <h4>Investment Management</h4>
+                  <h4>Financial Analysis & Modelling </h4>
                   <p>
-                    Quisque pulvinar libero dolor, quis bibendum eros euismod sit amet. Proin dapibus id diam at
+                  Comprehensive financial analysis and modeling services to drive informed decision-making and maximize profitability
                   </p>
                 </div>
               </div>
@@ -45,9 +45,9 @@ const Home = () => {
               <div className="thumbnail">
                 <img className="img-icon-thumbnail" src="images/Services/3.png" alt="img" />
                 <div className="caption">
-                  <h4>Taxes Planning</h4>
+                  <h4>Inventory Management Services</h4>
                   <p>
-                    Quisque pulvinar libero dolor, quis bibendum eros euismod sit amet. Proin dapibus id diam at
+                  Streamline your operations with our Inventory Management Services. Optimize stock levels and improve efficiency effortlessly
                   </p>
                 </div>
               </div>
@@ -56,9 +56,9 @@ const Home = () => {
               <div className="thumbnail">
                 <img className="img-icon-thumbnail" src="images/Services/6.png" alt="img" />
                 <div className="caption">
-                  <h4>Retirement Management</h4>
+                  <h4>Project Monitoring & coordination </h4>
                   <p>
-                    Quisque pulvinar libero dolor, quis bibendum eros euismod sit amet. Proin dapibus id diam at
+                  Efficiently oversee and manage projects, ensuring seamless coordination for timely and successful outcomes
                   </p>
                 </div>
               </div>

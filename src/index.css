@@ -58,12 +58,27 @@ background-color: var(--hovercolor) !important;
   box-shadow:  none !important;
   
 }
-.btn-secondary:hover{
+.btn-outline{
+  padding: 5px 20px !important;
+  transition: 0.3s ease-in-out !important;
+  border-radius: 2px !important;
+}
+.btn-secondary-outline{
+  background-color: transparent !important;
+  border: 2px solid var(--primary) !important;
+  box-shadow:  none !important;
+  color: var(--primary) !important;
+  
+}
+.btn-secondary-outline:hover{
   background-color: var(--primary) !important;
   border: 2px solid var(--primary) !important;
+  color: white !important;
 }
 
-
+.logo-text-color{
+  color: var(--primary) !important;
+}
 /* ==========================Scroll Bar====================== */
 /* width */
 

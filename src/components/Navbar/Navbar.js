@@ -21,7 +21,7 @@ export default function Navbar() {
     <div className="navbarid sticky-top">
 
       {/* ====================================================================================== */}
-      <div className="navbar navbar-expand-lg navbar-light bg-light    py-0 navwrapper  ">
+      <div className="navbar navbar-expand-lg navbar-light     py-0 navwrapper  ">
         <div className="container  px-lg-5   ">
           <Logo className="navbar-brand " />
 
@@ -36,29 +36,42 @@ export default function Navbar() {
           <div className="collapse navbar-collapse justify-content-end navbardiv  " id="navbarSupportedContent">
             <ul className="navbar-nav  mb-lg-0">
               <li className="nav-item">
+                <NavLink to="/">
                 <div className="nav-link active " aria-current="page" >
                   Home
                   <MdKeyboardArrowDown />
                 </div>
+                </NavLink>
                 <ul className='drop-down-menu p-0 '>
-                  <NavLink to="/" className="text-white"> <li>Home </li></NavLink>
+                 
+                  <NavLink to="/aboutus" className="text-white"> <li>About us </li></NavLink>
                   <NavLink to="/" className="text-white"><li>International Partners </li></NavLink>
                   <NavLink to="/" className="text-white"><li>Associates National </li></NavLink>
                   <NavLink to="/" className="text-white"><li>Associates International </li></NavLink>
                 </ul>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link active" aria-current="page" to="/aboutus">
-                  About us
-
-                </NavLink>
-              </li>
-              <li className="nav-item">
-              <NavLink className="nav-link active" aria-current="page" to="/services">
+              <NavLink to="/services">
+                <div className="nav-link active " aria-current="page" >
                   Services
-
+                  <MdKeyboardArrowDown />
+                </div>
                 </NavLink>
+                <ul className='drop-down-menu p-0 '>
+                 
+                  <NavLink to="/" className="text-white"> <li>Accounting & Bookkeeping</li></NavLink>
+                  <NavLink to="/aboutus" className="text-white"> <li>Financial Analysis & Modelling</li></NavLink>
+                  <NavLink to="/" className="text-white"><li>Inventory Management Services  </li></NavLink>
+                  <NavLink to="/" className="text-white"><li>Project Monitoring & coordination</li></NavLink>
+                  <NavLink to="/" className="text-white"><li>Feasibilities / Business Solutions </li></NavLink>
+                  <NavLink to="/" className="text-white"><li>GIS based solutions </li></NavLink>
+                  <NavLink to="/" className="text-white"><li>Writing Expression of Interest</li></NavLink>
+                  <NavLink to="/" className="text-white"><li>Tender Management</li></NavLink>
+                  <NavLink to="/" className="text-white"><li>Taxation</li></NavLink>
+                </ul>
               </li>
+         
+             
               <li className="nav-item">
               <NavLink className="nav-link active" aria-current="page" to="/projects">
                   Projects

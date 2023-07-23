@@ -3,8 +3,10 @@ import Logoimg from "../assets/logo.png"
 const Logo = () => {
   return (
     <>
-    <div className='logowrapper' >
-    <a className="navbar-brand" href="/"><img src={Logoimg} alt='Logo'/></a>
+    <div className='logowrapper d-flex align-items-center' >
+    <a className="navbar-brand" href="/">
+      <h1 className='logo-text-color' style={{fontWeight:"700",fontSize:"40px"}}>IBCI</h1>
+      </a>
     </div>
     
     </>
