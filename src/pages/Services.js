@@ -28,7 +28,7 @@ const Services = () => {
             <div className="container">
               <div className="row">
                 <div className='col-xs-12 col-sm-12 col-md-6 col-lg-4 p-2 p-lg-3 mb-3'>
-                  <NavLink to="/service_details">
+                  <NavLink to="/service_details/accounting&bookeeping/1">
                     <div className="item-services">
                       <div className="thumbnail">
                         <div className="services-3-column-img-container">
@@ -46,7 +46,7 @@ const Services = () => {
                   </NavLink>
                 </div>
                 <div className='col-xs-12 col-sm-12 col-md-6 col-lg-4 p-2 p-lg-3 mb-3'>
-                  <NavLink to="/service_details">
+                  <NavLink to="/service_details/FinancialAnalysis&Modelling/2">
                     <div className="item-services">
                       <div className="thumbnail">
                         <div className="services-3-column-img-container">
@@ -65,7 +65,7 @@ const Services = () => {
                 </div>
                 {/* end column 1 */}
                 <div className='col-xs-12 col-sm-12 col-md-6 col-lg-4 p-2 p-lg-3 mb-3'>
-                  <NavLink to="/service_details">
+                  <NavLink to="/service_details/InventoryManagementServices/3">
                     <div className="item-services">
                       <div className="thumbnail">
                         <div className="services-3-column-img-container">
@@ -85,7 +85,7 @@ const Services = () => {
 
                 {/* end column 1 */}
                 <div className='col-xs-12 col-sm-12 col-md-6 col-lg-4 p-2 p-lg-3 mb-3'>
-                  <NavLink to="/service_details">
+                  <NavLink to="/service_details/ProjectMonitoring&coordination/4">
                     <div className="item-services">
                       <div className="thumbnail">
                         <div className="services-3-column-img-container">
@@ -104,7 +104,7 @@ const Services = () => {
                 </div>
                 {/* end column 1 */}
                 <div className='col-xs-12 col-sm-12 col-md-6 col-lg-4 p-2 p-lg-3 mb-3'>
-                  <NavLink to="/service_details">
+                  <NavLink to="/service_details/FeasibilitiesBusinessSolutions/5">
                     <div className="item-services">
                       <div className="thumbnail">
                         <div className="services-3-column-img-container">
@@ -123,7 +123,7 @@ const Services = () => {
                 </div>
                 {/* end column 1 */}
                 <div className='col-xs-12 col-sm-12 col-md-6 col-lg-4 p-2 p-lg-3 mb-3'>
-                  <NavLink to="/service_details">
+                  <NavLink to="/service_details/GISbasedsolutions/6">
                     <div className="item-services">
                       <div className="thumbnail">
                         <div className="services-3-column-img-container">
@@ -142,7 +142,7 @@ const Services = () => {
                 </div>
                 {/* end column 1 */}
                 <div className='col-xs-12 col-sm-12 col-md-6 col-lg-4 p-2 p-lg-3 mb-3'>
-                  <NavLink to="/service_details">
+                  <NavLink to="/service_details/WritingExpressionofInterest/7">
                     <div className="item-services">
                       <div className="thumbnail">
                         <div className="services-3-column-img-container">
@@ -161,7 +161,7 @@ const Services = () => {
                 </div>
                 {/* end column 1 */}
                 <div className='col-xs-12 col-sm-12 col-md-6 col-lg-4 p-2 p-lg-3 mb-3'>
-                  <NavLink to="/service_details">
+                  <NavLink to="/service_details/TenderManagement/8">
                     <div className="item-services">
                       <div className="thumbnail">
                         <div className="services-3-column-img-container">
@@ -180,7 +180,7 @@ const Services = () => {
                 </div>
                 {/* end column 1 */}
                 <div className='col-xs-12 col-sm-12 col-md-6 col-lg-4 p-2 p-lg-3 mb-3'>
-                  <NavLink to="/service_details">
+                  <NavLink to="/service_details/Taxation/9">
                     <div className="item-services">
                       <div className="thumbnail">
                         <div className="services-3-column-img-container">

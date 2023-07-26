@@ -75,6 +75,9 @@ background-color: var(--hovercolor) !important;
   border: 2px solid var(--primary) !important;
   color: white !important;
 }
+.text-align-justify{
+  text-align: justify !important;
+}
 
 .logo-text-color{
   color: var(--primary) !important;
@@ -83,10 +86,11 @@ background-color: var(--hovercolor) !important;
 /* width */
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
  
 }
+
 
 /* Track */
 ::-webkit-scrollbar-track {

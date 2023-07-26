@@ -1,6 +1,7 @@
 import React from 'react'
 import Socials from '../socialsIcons/SocialIcons'
 import { NavLink } from 'react-router-dom'
+import Logo from '../Logo'
 const Footer = () => {
   return (
     <>
@@ -9,14 +10,18 @@ const Footer = () => {
           <div className="row">
             <div className="footer-row">
               <div className="footer-col-1">
-                <a href="index.html"><img src="images/Footer/logo-footer.png" className="img-responsive" alt="Image" /></a>
+                <a href="index.html"><Logo/></a>
                 <ul className="clearfix">
-                  <li><a href="services-detail.html">Finacial Planning</a></li>
-                  <li><a href="services-detail.html">Insurance Consulting</a></li>
-                  <li><a href="services-detail.html">Investments Management</a></li>
-                  <li><a href="services-detail.html">Retirement Strategies</a></li>
-                  <li><a href="services-detail.html">Taxes Planning</a></li>
-                  <li><a href="services-detail.html">Business Loan</a></li>
+                  <li><a href="/service_details/Accounting&Bookkeeping/1">Accounting & Bookkeeping</a></li>
+                  <li><a href="/service_details/FinancialAnalysis&Modelling/2">Financial Analysis & Modelling </a></li>
+                  <li><a href="/service_details/InventoryManagementServices/3" >Inventory Management Services </a></li>
+                  <li><a href="/service_details/ProjectMonitoring&coordination/4">Project Monitoring & coordination </a></li>
+                  <li><a href="/service_details/FeasibilitiesBusinessSolutions/5">Feasibilities / Business Solutions </a></li>
+                  <li><a href="/service_details/GISbasedsolutions/6">GIS based solutions</a></li>
+                  <li><a href="/service_details/WritingExpressionofInterest/7">Writing Expression of Interest</a></li>
+                  <li><a href="/service_details/WritingExpressionofInterest/7">Writing Expression of Interest</a></li>
+                  <li><a href="/service_details/TenderManagement/8">Tender Management</a></li>
+                  <li><a href="/service_details/Taxation/9">Taxation</a></li>
                 </ul>
               </div>
               <div className="footer-col-2">
@@ -35,7 +40,7 @@ const Footer = () => {
               </div>
             </div> {/* End footer row */}
             <div className="col-md-12 footer-link">
-              <p>Copyright © 2023. ABC Company  All rights reserved.</p>
+              <p className='cursor-pointer'>Copyright © 2023. IBCI Company  All rights reserved.</p>
               <ul>
               <NavLink className="text-white me-3" to="/aboutus"> <li>About </li></NavLink>
               <NavLink className="text-white me-3" to="/contactus"> <li>Contact Us </li></NavLink>

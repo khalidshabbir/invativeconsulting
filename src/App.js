@@ -12,13 +12,15 @@ import Contactus from './pages/Contactus';
 import Error404 from './pages/Error404';
 import TermsConditions from './pages/TermsConditions';
 import PrivacyPolices from './pages/PrivacyPolices';
-import ServiceDetails from './pages/ServiceDetails';
+import ServiceDetails from './pages/Services_Details';
+import ScrollToTop from './components/ScrollToTop';
 const App = () => {
   return (
   <>
      <Router>
       <Topbar/>
       <Navbar/>
+      <ScrollToTop />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/aboutus" element={<About />} />
@@ -28,7 +30,7 @@ const App = () => {
         <Route exact path="/contactus" element={<Contactus />} />
         <Route exact path="/terms_conditions" element={<TermsConditions />} />
         <Route exact path="/privacy_policies" element={<PrivacyPolices />} />
-        <Route exact path="/service_details" element={<ServiceDetails />} />
+        <Route exact path="/service_details/:name/:id" element={<ServiceDetails />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer/>
