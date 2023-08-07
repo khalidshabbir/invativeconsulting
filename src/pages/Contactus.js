@@ -1,20 +1,20 @@
 import React from 'react'
 import Hero from "../components/HeroSection/HeroSection"
-import {FaHome} from "react-icons/fa"
-import {IoIosCall} from "react-icons/io"
-import {FiMail} from "react-icons/fi"
-import {BiTime} from "react-icons/bi"
+import { FaHome } from "react-icons/fa"
+import { IoIosCall } from "react-icons/io"
+import { FiMail } from "react-icons/fi"
+import { BiTime } from "react-icons/bi"
 import SocialIcons from '../components/socialsIcons/SocialIcons'
 import imgs from "../assets/contactus.jpg"
 
 const Contactus = () => {
-  
-  return (
-   <>
-    <Hero title="Contact Us" img={imgs} />
-     
 
-     {/* ======================================Contact us========================== */}
+  return (
+    <>
+      <Hero title="Contact Us" img={imgs} />
+
+
+      {/* ======================================Contact us========================== */}
       <section className="padding-top:50px;">
         <div className="container py-5">
           <div className="row mb-5">
@@ -42,34 +42,35 @@ const Contactus = () => {
             </div> {/* End col */}
             <div className="col-12 col-lg-4 right-contact mt-5 mt-lg-0">
               <div className='contactinfo'>
-              <h4>Contact Info</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque metus arcu, malesuada a est eget, maximus efficitur sapien.
-              </p>
-              <ul className="address">
-                <li className='cursor-pointer'><p><FaHome />&nbsp;&nbsp; 8th floor, 379 Hudson St, New York, NY 10018</p></li>
-                <li className='cursor-pointer'><p><IoIosCall />&nbsp;&nbsp; (+1) 96 716 6879</p></li>
-                <li className='cursor-pointer'><p><IoIosCall /> &nbsp;(+1) 96 716 6879</p></li>
-                <li className='cursor-pointer'><p><FiMail />&nbsp;&nbsp; contact@finance.com</p></li>
-                <li className='cursor-pointer'><p><BiTime />&nbsp;&nbsp; Mon-Fri 09:00 - 17:00</p></li>
-              </ul>
+                <h4>Contact Info</h4>
+                <p>
+                  IBCI is a renowned international consulting firm committed to empowering clients with tailored financial management solutions. 
+                </p>
+                <ul className="address">
+                  <li className='cursor-pointer'><p><FaHome />&nbsp;&nbsp; 38-Commercial, Imperial Gardens, Paragon, Barki Road, Lahore</p></li>
+                  <li className='cursor-pointer'><p><IoIosCall />&nbsp;&nbsp;+923350402576
+                  </p></li>
+                  <li className='cursor-pointer'><p><IoIosCall /> &nbsp;+923350402576</p></li>
+                  <a className='text-dark' href='https://mail.google.com/mail/?view=cm&to=team.ibci2023@gmail.com' target="_blank" rel="noreferrer"> <li className='cursor-pointer'><p><FiMail />&nbsp;&nbsp; team.ibci2023@gmail.com</p></li></a>
+                  <li className='cursor-pointer'><p><BiTime />&nbsp;&nbsp;   Mon-Fri 09:00 - 17:00</p></li>
+                </ul>
               </div>
 
               <div className='folows'>
                 <h4 className='mt-5 mb-4'>Follow Us</h4>
-                <SocialIcons iconsize="24px"/>
+                <SocialIcons iconsize="24px" />
               </div>
-             
+
             </div> {/* End col */}
           </div>
           <div className='w-100 mt-5'>
-          <h4>Our Office</h4>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.293695067065!2d74.34081047549502!3d31.516092574215932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190458fb499665%3A0x7b5e489578936329!2sHafeez%20Center%2C%20LG%205%2C%20Block%20E1%20Block%20E%201%20Gulberg%20III%2C%20Lahore%2C%20Punjab%2054000%2C%20Pakistan!5e0!3m2!1sen!2s!4v1688897400504!5m2!1sen!2s" width="100%" height="450" style={{border:"0"}} allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h4>Our Office</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d11356.857050382052!2d74.45139533210852!3d31.527437379751174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s38-Commercial%2C%20Imperial%20Gardens%2C%20Paragon%2C%20Barki%C2%A0Road%2C%C2%A0Lahore!5e0!3m2!1sen!2s!4v1691446020154!5m2!1sen!2s" title="office address" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>
 
-   </>
+    </>
   )
 }
 

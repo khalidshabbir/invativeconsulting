@@ -15,7 +15,7 @@ const CallBack = () => {
                           </div>
                           <div className="col-md-6 get-call-back-right">
                               <div className="call-back-form">
-                                  <form action="GET" method="POST">
+                                  <form >
                                       <p>How can we help? *</p>
                                     
                                       <div className="row">
@@ -27,7 +27,7 @@ const CallBack = () => {
                                           </div>
                                       </div>
                                       <textarea  type="text" className="form-control custom-textarea shadow-none" id="message" placeholder="Message" rows="3"/>
-                                      <button type="submit" className="ot-btn large-btn btn-rounded btn-main-color btn-submit">Submit</button>
+                                      <button  className="ot-btn large-btn btn-rounded btn-main-color btn-submit">Submit</button>
                                   </form>
                               </div>{/* End call back form */}
                           </div>

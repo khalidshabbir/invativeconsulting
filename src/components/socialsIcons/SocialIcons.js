@@ -12,12 +12,12 @@ const SocialIcons = (props) => {
     return (
         <>
             <div className='socials-icons d-flex align-items-center'>
-                <div className='social_icon me-2 text-light mail'><AiOutlineMail  style={{ fontSize: `${size}` }} /></div>
-                <div className='social_icon me-2 text-light linkedin'><BiLogoLinkedin  style={{ fontSize:  `${size}` }}/></div>
-                <div className='social_icon me-2 text-light facebook'><BiLogoFacebook  style={{ fontSize:  `${size}` }}/></div>
-                <div className='social_icon me-2 text-light instagram'><AiFillInstagram style={{ fontSize:  `${size}` }} /></div>
-                <div className='social_icon me-2 text-light twitter'><AiOutlineTwitter  style={{ fontSize:  `${size}` }}/></div>
-                <div className='social_icon me-2 text-light whatsapp'><BsWhatsapp style={{ fontSize:  `${size}` }} /></div>
+                <a  href='https://mail.google.com/mail/?view=cm&to=team.ibci2023@gmail.com' target="_blank" rel="noreferrer" className='social_icon me-2 text-light mail'><AiOutlineMail  style={{ fontSize: `${size}` }} /></a>
+                <a href='https://www.linkedin.com/in/ibci-consultants-671976285/' target="_blank" rel="noreferrer" className='social_icon me-2 text-light linkedin'><BiLogoLinkedin  style={{ fontSize:  `${size}` }}/></a>
+                <a href='/' className='social_icon me-2 text-light facebook'><BiLogoFacebook  style={{ fontSize:  `${size}` }}/></a>
+                <a href='/' className='social_icon me-2 text-light instagram'><AiFillInstagram style={{ fontSize:  `${size}` }} /></a>
+                <a href='/' className='social_icon me-2 text-light twitter'><AiOutlineTwitter  style={{ fontSize:  `${size}` }}/></a>
+                <a href='https://wa.me/+923350402576' target="_blank" rel="noreferrer" className='social_icon me-2 text-light whatsapp'><BsWhatsapp style={{ fontSize:  `${size}` }} /></a>
             </div>
 
         </>

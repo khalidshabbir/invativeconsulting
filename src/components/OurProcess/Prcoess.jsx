@@ -8,7 +8,7 @@ const Prcoess = () => {
                 <div className="row">
                     <div className="process-warp">
                         <div className=" col-12 col-lg-6 img-demo-our-process d-none d-md-block">
-                            <img src={processimg} className="img-responsive" style={{height:"100%"}} alt="Image" />
+                            <img src={processimg} className="img-responsive" style={{height:"100%"}} alt="process_image" />
                         </div>
                         <div className=" col-12 col-lg-6 accordion-process padding-top-70 padding-bottom-50 d-block">
                             <div className=" pe-5 d-block">

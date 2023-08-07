@@ -27,9 +27,9 @@ const Footer = () => {
               <div className="footer-col-2">
                 <h3 className="text-white">Contact us</h3>
                 <div className="border-2-side">
-                  <p>Address: 8th floor, 379 Hudson St, New York, NY 10018</p>
+                  <p>Address: 38-Commercial, Imperial Gardens, Paragon, Barki Road, Lahore</p>
                   <p><span>Phone: (+1) 96 716 6879</span></p>
-                  <p><span>Email: contact@site.com</span></p>
+                  <a href='https://mail.google.com/mail/?view=cm&to=team.ibci2023@gmail.com' target="_blank" rel="noreferrer"><span>Email: team.ibci2023@gmail.com</span></a>
                 </div>
               </div>
               <div className="footer-col-3">

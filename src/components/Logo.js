@@ -1,5 +1,4 @@
 import React from 'react'
-import Logoimg from "../assets/logo.png"
 const Logo = () => {
   return (
     <>
