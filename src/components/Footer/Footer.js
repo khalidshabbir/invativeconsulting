@@ -2,7 +2,26 @@ import React from 'react'
 import Socials from '../socialsIcons/SocialIcons'
 import { NavLink } from 'react-router-dom'
 import Logo from '../Logo'
+import { base_url } from '../../utils/base_url'
+import axios from 'axios'
+import {useState,useEffect} from 'react'
 const Footer = () => {
+  const [getdata, setdata] = useState([]);
+  const getdataFunciton = async () => {
+      const endpoint = `${base_url}/getcontactus`
+      try {
+          const response = await axios.get(endpoint);
+          const data = response.data.contactus;
+
+          setdata(data)
+
+      } catch (error) {
+
+      }
+  }
+  useEffect(() => {
+      getdataFunciton()
+  }, [])
   return (
     <>
       <footer className=" bg-dark footer">
@@ -27,9 +46,9 @@ const Footer = () => {
               <div className="footer-col-2">
                 <h3 className="text-white">Contact us</h3>
                 <div className="border-2-side">
-                  <p>Address: 38-Commercial, Imperial Gardens, Paragon, Barki Road, Lahore</p>
-                  <p><span>Phone: (+1) 96 716 6879</span></p>
-                  <a href='https://mail.google.com/mail/?view=cm&to=team.ibci2023@gmail.com' target="_blank" rel="noreferrer"><span>Email: team.ibci2023@gmail.com</span></a>
+                  <p>{getdata.location}</p>
+                  <p><span>Phone: +{getdata.phone}</span></p>
+                  <a href={`https://mail.google.com/mail/?view=cm&to=${getdata.email}`} target="_blank" rel="noreferrer"><span>Email: {getdata.email}</span></a>
                 </div>
               </div>
               <div className="footer-col-3">
@@ -40,7 +59,7 @@ const Footer = () => {
               </div>
             </div> {/* End footer row */}
             <div className="col-md-12 footer-link">
-              <p className='cursor-pointer'>Copyright © 2023. IBCI Company  All rights reserved.</p>
+              <p className='cursor-pointer'>Copyright © 2023. HBC Company  All rights reserved.</p>
               <ul>
               <NavLink className="text-white me-3" to="/aboutus"> <li>About </li></NavLink>
               <NavLink className="text-white me-3" to="/contactus"> <li>Contact Us </li></NavLink>

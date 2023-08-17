@@ -1,9 +1,15 @@
 import React, { useRef } from 'react';
 import { IoIosArrowBack } from 'react-icons/io'
 import { IoIosArrowForward } from 'react-icons/io'
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import { base_url } from '../../utils/base_url';
+import { base_url_images } from '../../utils/base_url';
 import Slider from "react-slick";
+import CircularProgress from '@mui/material/CircularProgress';
 import "./Testimonial.css"
 const Testimonial = () => {
+    const [loading, setloading] = useState(false)
     const sliderRef = useRef(null);
     const handlePreviousSlide = () => {
         sliderRef.current.slickPrev();
@@ -49,6 +55,27 @@ const Testimonial = () => {
             }
         ]
     };
+    const [getdata, setdata] = useState()
+    const handlegetdata = async () => {
+        setloading(false)
+        const endpoint = `${base_url}/gettestimonial`
+        try {
+            const response = await axios.get(endpoint)
+            const check_length = response.data.testimonial;
+
+            if (check_length.length > 3) {
+
+                setdata(response.data.testimonial)
+            }
+
+            setloading(true)
+        } catch (error) {
+
+        }
+    }
+    useEffect(() => {
+        handlegetdata()
+    }, [])
     return (
         <>
             <section className="bg-grey py-5">
@@ -62,62 +89,26 @@ const Testimonial = () => {
                                     <butt className="btn px-0 d-flex align-items-center justify-content-center" onClick={handleNextSlide}><IoIosArrowForward /></butt>
                                 </div>
                             </div>
-                            <Slider {...settings} ref={sliderRef}>
-                                <div className="item item-testimonials-3-columns text-left">
-                                    <p className="quote-icon">“</p>
-                                    <p><i>Morbi auctor vel mauris facilisis lacinia. Aenean suscipit lorem leo, et hendrerit odio fermentum et. Donec ac dolor eros. Mauris arcu nunc, iaculis sit amet lacus iaculis, faucibus faucibus nunc. Vestibulum sit amet lacinia massa</i></p>
-                                    <div className="avatar-testimonials-3-columns">
-                                        <img src="images/Testimonials/1.jpg" className="img-responsive" alt="img" />
-                                    </div>
-                                    <h4 className="name-testimonials-3-columns">Linda Campbell</h4>
-                                    <span className="job-testimonials-3-columns">CEO Finanace Theme Group</span>
-                                </div>{/* end item */}
-                                <div className="item item-testimonials-3-columns text-left">
-                                    <p className="quote-icon">“</p>
-                                    <p><i>Morbi auctor vel mauris facilisis lacinia. Aenean suscipit lorem leo, et hendrerit odio fermentum et. Donec ac dolor eros. Mauris arcu nunc, iaculis sit amet lacus iaculis, faucibus faucibus nunc. Vestibulum sit amet lacinia massa</i></p>
-                                    <div className="avatar-testimonials-3-columns">
-                                        <img src="images/Testimonials/2.jpg" className="img-responsive" alt="img" />
-                                    </div>
-                                    <h4 className="name-testimonials-3-columns">John Walker</h4>
-                                    <span className="job-testimonials-3-columns">Photographer</span>
-                                </div>{/* end item */}
-                                <div className="item item-testimonials-3-columns text-left">
-                                    <p className="quote-icon">“</p>
-                                    <p><i>Morbi auctor vel mauris facilisis lacinia. Aenean suscipit lorem leo, et hendrerit odio fermentum et. Donec ac dolor eros. Mauris arcu nunc, iaculis sit amet lacus iaculis, faucibus faucibus nunc. Vestibulum sit amet lacinia massa</i></p>
-                                    <div className="avatar-testimonials-3-columns">
-                                        <img src="images/Testimonials/3.jpg" className="img-responsive" alt="img" />
-                                    </div>
-                                    <h4 className="name-testimonials-3-columns">Cheryl Cruz</h4>
-                                    <span className="job-testimonials-3-columns">Marketing Manager</span>
-                                </div>{/* end item */}
-                                <div className="item item-testimonials-3-columns text-left">
-                                    <p className="quote-icon">“</p>
-                                    <p><i>Morbi auctor vel mauris facilisis lacinia. Aenean suscipit lorem leo, et hendrerit odio fermentum et. Donec ac dolor eros. Mauris arcu nunc, iaculis sit amet lacus iaculis, faucibus faucibus nunc. Vestibulum sit amet lacinia massa</i></p>
-                                    <div className="avatar-testimonials-3-columns">
-                                        <img src="images/Testimonials/4.jpg" className="img-responsive" alt="img" />
-                                    </div>
-                                    <h4 className="name-testimonials-3-columns">James Smith</h4>
-                                    <span className="job-testimonials-3-columns">Senior Finance Manager</span>
-                                </div>{/* end item */}
-                                <div className="item item-testimonials-3-columns text-left">
-                                    <p className="quote-icon">“</p>
-                                    <p><i>Morbi auctor vel mauris facilisis lacinia. Aenean suscipit lorem leo, et hendrerit odio fermentum et. Donec ac dolor eros. Mauris arcu nunc, iaculis sit amet lacus iaculis, faucibus faucibus nunc. Vestibulum sit amet lacinia massa</i></p>
-                                    <div className="avatar-testimonials-3-columns">
-                                        <img src="images/Testimonials/5.jpg" className="img-responsive" alt="img" />
-                                    </div>
-                                    <h4 className="name-testimonials-3-columns">Maria Garcia</h4>
-                                    <span className="job-testimonials-3-columns">Finance Director Theme Group</span>
-                                </div>{/* end item */}
-                                <div className="item item-testimonials-3-columns text-left">
-                                    <p className="quote-icon">“</p>
-                                    <p><i>Morbi auctor vel mauris facilisis lacinia. Aenean suscipit lorem leo, et hendrerit odio fermentum et. Donec ac dolor eros. Mauris arcu nunc, iaculis sit amet lacus iaculis, faucibus faucibus nunc. Vestibulum sit amet lacinia massa</i></p>
-                                    <div className="avatar-testimonials-3-columns">
-                                        <img src="images/Testimonials/6.jpg" className="img-responsive" alt="img" />
-                                    </div>
-                                    <h4 className="name-testimonials-3-columns">Robert Johnson</h4>
-                                    <span className="job-testimonials-3-columns">Finance Assistant - PR Agency</span>
-                                </div>
-                            </Slider>
+                            {loading ?
+                                <Slider {...settings} ref={sliderRef}>
+                                    {getdata?.map((obj) => {
+                                        return (
+                                            <>
+
+                                                <div className="item item-testimonials-3-columns text-left">
+                                                    <p className="quote-icon">“</p>
+                                                    <p><i>{obj.testimonialtext}</i></p>
+                                                    <div className="avatar-testimonials-3-columns">
+                                                        <img src={`${base_url_images}images/${obj.image}`} className="img-responsive" alt="img" />
+                                                    </div>
+                                                    <h4 className="name-testimonials-3-columns">{obj.name}</h4>
+                                                    <span className="job-testimonials-3-columns">{obj.designation}</span>
+                                                </div>{/* end item */}
+                                            </>)
+                                    })}
+                                </Slider> : <div className='d-flex align-items-center justify-content-center'>
+                                    <CircularProgress style={{ color: "#01ABC8" }} />
+                                </div>}
                         </div>
                     </div>{/* End row */}
                 </div>{/* End container */}

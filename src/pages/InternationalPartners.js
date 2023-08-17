@@ -11,7 +11,7 @@ const InternationalPartners = () => {
         <h1 class="mb-4 text-center">Welcome to CANOPUS CONSULTANTS</h1>
 
         <div className='text-align-justify'>
-          <h4 className='text-center my-5'>IBCI's esteemed international partner in Australia</h4>
+          <h4 className='text-center my-5'>HBC's esteemed international partner in Australia</h4>
           <p className=''>Introducing CANOPUS CONSULTANTS - Your Trusted Business Support and NDIS Services Partner specializing in comprehensive business support and NDIS services. With a commitment to excellence and a wealth of expertise, we are here to assist organizations in implementing effective management systems and meeting the required policies and procedures.</p>
           <h6 className='my-4'>(A) Business Support:</h6>
           <p >(i) Operational Guidance: At CANOPUS CONSULTANTS, we offer invaluable operational guidance to our clients, ensuring that they adhere to essential management systems and protocols. Our expert team will support your organization in following the right policies and procedures, promoting efficiency and compliance.
@@ -40,7 +40,7 @@ const InternationalPartners = () => {
        
           </p>
         
-          <a className='mt-4' href='https://canopusconsultants.com.au/ '><button className='btn btn-primary'>Visit our Website</button></a>
+          <a className='mt-4' href='https://canopusconsultants.com.au/ ' target='_blank' rel="noreferrer"><button className='btn btn-primary'>Visit our Website</button></a>
           <a className='mt-4 mx-3' href='https://canopusconsultants.com.au/ '><button className='btn btn-primary'><HiMail className='me-3'/> Send an email</button></a>
 
         </div>

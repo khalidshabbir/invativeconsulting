@@ -14,9 +14,16 @@ import TermsConditions from './pages/TermsConditions';
 import PrivacyPolices from './pages/PrivacyPolices';
 import ServiceDetails from './pages/Services_Details';
 import ScrollToTop from './components/ScrollToTop';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const App = () => {
   return (
   <>
+   <ToastContainer
+   position="top-center"
+   
+   />
      <Router>
       <Topbar/>
       <Navbar/>
