@@ -41,7 +41,7 @@ const InternationalPartners = () => {
           </p>
         
           <a className='mt-4' href='https://canopusconsultants.com.au/ ' target='_blank' rel="noreferrer"><button className='btn btn-primary'>Visit our Website</button></a>
-          <a className='mt-4 mx-3' href='https://canopusconsultants.com.au/ '><button className='btn btn-primary'><HiMail className='me-3'/> Send an email</button></a>
+          <a className='mt-4 mx-3' href='https://mail.google.com/mail/?view=cm&to=info@canopusconsultants.com.au' target='_blank' rel="noreferrer"><button className='btn btn-primary'><HiMail className='me-3'/> Send an email</button></a>
 
         </div>
 

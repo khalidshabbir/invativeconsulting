@@ -30,12 +30,12 @@ const SocialIcons = (props) => {
     return (
         <>
             <div className='socials-icons d-flex align-items-center'>
-                <a href={`https://mail.google.com/mail/?view=cm&to=${getdata.email}`} target="_blank" rel="noreferrer" className='social_icon me-2 text-light mail'><AiOutlineMail style={{ fontSize: `${size}` }} /></a>
-                <a href={`${getdata.linkedin}`} target="_blank" rel="noreferrer" className='social_icon me-2 text-light linkedin'><BiLogoLinkedin style={{ fontSize: `${size}` }} /></a>
+                <a href={`https://mail.google.com/mail/?view=cm&to=${getdata?.email}`} target="_blank" rel="noreferrer" className='social_icon me-2 text-light mail'><AiOutlineMail style={{ fontSize: `${size}` }} /></a>
+                <a href={`${getdata?.linkedin}`} target="_blank" rel="noreferrer" className='social_icon me-2 text-light linkedin'><BiLogoLinkedin style={{ fontSize: `${size}` }} /></a>
                 <a href='/' className='social_icon me-2 text-light facebook'><BiLogoFacebook style={{ fontSize: `${size}` }} /></a>
                 <a href='/' className='social_icon me-2 text-light instagram'><AiFillInstagram style={{ fontSize: `${size}` }} /></a>
                 <a href='/' className='social_icon me-2 text-light twitter'><AiOutlineTwitter style={{ fontSize: `${size}` }} /></a>
-                <a href={`https://wa.me/+${getdata.whatsapp}`} target="_blank" rel="noreferrer" className='social_icon me-2 text-light whatsapp'><BsWhatsapp style={{ fontSize: `${size}` }} /></a>
+                <a href={`https://wa.me/+${getdata?.whatsapp}`} target="_blank" rel="noreferrer" className='social_icon me-2 text-light whatsapp'><BsWhatsapp style={{ fontSize: `${size}` }} /></a>
             </div>
 
         </>

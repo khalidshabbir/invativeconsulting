@@ -4,10 +4,11 @@ import banner1 from "../../assets/herobanner1.jpg"
 import banner2 from "../../assets/herobanner2.jpg"
 import banner3 from "../../assets/herobanner3.jpg"
 import "./Hero.css"
+import { NavLink } from 'react-router-dom';
 const Hero = () => {
     return (
         <>
-            <Carousel className='carousel' fade controls={false} prevIcon={null} nextIcon={null} prevLabel="" nextLabel="" pause={true} interval={10000} indicators={true}>
+          <Carousel className='carousel' fade controls={false} prevIcon={null} nextIcon={null} prevLabel="" nextLabel="" pause={true} interval={10000} indicators={true}>
                 <Carousel.Item className='carousel_Item '>
                     <img
                         className="d-block "

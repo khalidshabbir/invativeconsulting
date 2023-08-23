@@ -1,9 +1,9 @@
-import criptoimg from "../../assets/projects/cripto.jpg"
-import treeimg from "../../assets/projects/green.jpg"
-import arloimg from "../../assets/projects/arlo.jpg"
-import steemimg from "../../assets/projects/steem.png"
-import ncrimg from "../../assets/projects/ncr.png"
-import iagon from "../../assets/projects/iagon.png"
+import criptoimg from "../../assets/projects/5d.jpg"
+import treeimg from "../../assets/projects/5d.jpg"
+import arloimg from "../../assets/projects/5d.jpg"
+import steemimg from "../../assets/projects/5d.jpg"
+import ncrimg from "../../assets/projects/5d.jpg"
+import iagon from "../../assets/projects/5d.jpg"
 const projects=[
     {
         'id': 1,

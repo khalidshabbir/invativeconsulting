@@ -1,9 +1,11 @@
 import React from 'react'
 import Hero from "../components/HeroSection/HeroSection"
+import error404 from '../assets/error404.jpg'
+import error404404 from '../assets/404.png'
 const Error404 = () => {
   return (
     <>
-      <Hero title="Page Not Found" img="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" />
+      <Hero title="Page Not Found" img={error404} />
 
 
 
@@ -19,7 +21,7 @@ const Error404 = () => {
               </div>
             </div>
             <div className="col-md-5 col-sm-5">
-              <img alt src="images/404/404.png" className="img-responsive" />
+              <img alt="404error" src={error404404} className="img-responsive" />
             </div>
           </div>
         </div>

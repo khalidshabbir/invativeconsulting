@@ -81,4 +81,10 @@
     box-shadow: unset !important;
     border-radius: 25px !important; 
   }
-  
+  /* .accordion-item:first-of-type .accordion-button {
+    color: white !important;
+    background-color: #01ABC8 !important;
+    box-shadow: unset !important;
+    border-radius: 25px !important; 
+
+  } */

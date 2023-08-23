@@ -4,7 +4,8 @@ import aboutus from '../assets/aboutus.jpg'
 import missionimg from "../assets/mission.png"
 import vissionimg from "../assets/vision.png"
 import valuesimg from "../assets/values.png"
-import Team from "../components/Team/Team"
+import Partner from "../components/Partners/Partners"
+import CallBack from '../components/CallBack/CallBack'
 const About = () => {
   return (
     <>
@@ -85,8 +86,10 @@ const About = () => {
           </div>
         </div>
       </section>
+      {/* ================================== */}
+      <CallBack/>
       {/* ===================================== */}
-      <Team bg="bg-white" />
+      <Partner />
     </>
   )
 }

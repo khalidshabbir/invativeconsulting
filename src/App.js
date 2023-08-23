@@ -14,6 +14,7 @@ import TermsConditions from './pages/TermsConditions';
 import PrivacyPolices from './pages/PrivacyPolices';
 import ServiceDetails from './pages/Services_Details';
 import ScrollToTop from './components/ScrollToTop';
+import Project_Details from './pages/Project_Details';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -38,6 +39,7 @@ const App = () => {
         <Route exact path="/terms_conditions" element={<TermsConditions />} />
         <Route exact path="/privacy_policies" element={<PrivacyPolices />} />
         <Route exact path="/service_details/:name/:id" element={<ServiceDetails />} />
+        <Route exact path="/project_details/:name/:id" element={<Project_Details />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer/>

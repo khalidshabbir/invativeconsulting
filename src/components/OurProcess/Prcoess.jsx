@@ -16,7 +16,7 @@ const Prcoess = () => {
                                 <div class="accordion pe-lg-5" id="accordionExample">
                                     <div class="accordion-item mt-3 ">
                                         <h2 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <button class="accordion-button  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                 01. Define Objectives
                                             </button>
                                         </h2>

@@ -4,11 +4,12 @@ import CountUp from 'react-countup'
 import ScrollTrigger from 'react-scroll-trigger'
 import Process from '../components/OurProcess/Prcoess'
 import Partners from '../components/Partners/Partners'
-import Team from '../components/Team/Team'
+// import Team from '../components/Team/Team'
 import CallBack from '../components/CallBack/CallBack'
 import Testimonial from '../components/Testimonial/Testimonial'
 import WhyChooseUs from '../components/WhyChooseUs/WhyChooseus'
 import OurCommitment from '../components/OurCommitment/OurCommitment'
+import { NavLink } from 'react-router-dom'
 const Home = () => {
   const [counterOn,setcounterOn]=useState(false)
   return (
@@ -16,10 +17,26 @@ const Home = () => {
     
       <Hero />
       {/* =================================== */}
-      <div className="py-5 my-5">
+      <div className='row'>
+        <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6'>
+
+        </div>
+        <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6'>
+
+        </div>
+      </div>
+
+      {/* ===================================== */}
+      <div className="py-5 mt-4">
+     
         <div className="container px-lg-5">
-          <div className="row clearfix d-flex align-items-center">
-            <article className="col-md-6 col-lg-3 thumbnail-style thumbnail-icon-item text-center">
+     
+          <div className=' d-flex align-items-center justify-content-between mb-5'> <h2 className=''>Our Services</h2>
+          <NavLink to="/services"><h6 className='text-color-primary'>See More</h6></NavLink> 
+          </div>
+       
+          <div className="row d-flex align-items-top">
+            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-3 thumbnail-style thumbnail-icon-item text-center">
               <div className="thumbnail">
                 <img src="images/Services/1.png" alt="img" />
                 <div className="caption">
@@ -29,8 +46,8 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-            </article>{/* End article */}
-            <article className="col-md-6 col-lg-3 thumbnail-style thumbnail-icon-item text-center">
+            </div>{/* End article */}
+            <article className="col-xs-12 col-sm-12 col-md-6 col-lg-3 thumbnail-style thumbnail-icon-item text-center">
               <div className="thumbnail">
                 <img className="img-icon-thumbnail" src="images/Services/2.png" alt="img" />
                 <div className="caption">
@@ -41,7 +58,7 @@ const Home = () => {
                 </div>
               </div>
             </article>{/* End article */}
-            <article className="col-md-6 col-lg-3 thumbnail-style thumbnail-icon-item text-center">
+            <article className="col-xs-12 col-sm-12 col-md-6 col-lg-3 thumbnail-style thumbnail-icon-item text-center">
               <div className="thumbnail">
                 <img className="img-icon-thumbnail" src="images/Services/3.png" alt="img" />
                 <div className="caption">
@@ -52,7 +69,7 @@ const Home = () => {
                 </div>
               </div>
             </article>{/* End article */}
-            <article className="col-md-6 col-lg-3 thumbnail-style thumbnail-icon-item text-center">
+            <article className="col-xs-12 col-sm-12 col-md-6 col-lg-3 thumbnail-style thumbnail-icon-item text-center">
               <div className="thumbnail">
                 <img className="img-icon-thumbnail" src="images/Services/6.png" alt="img" />
                 <div className="caption">
@@ -64,6 +81,7 @@ const Home = () => {
               </div>
             </article>{/* End article */}
           </div>{/* End Row */}
+        
         </div>
       </div> {/* End section */}
      {/* =================================================================== */}
@@ -78,7 +96,7 @@ const Home = () => {
                 <ul>
                   <li>
                   <div className='d-flex flex-column align-items-start'>
-                    <p className='p-0 m-0'><span className='p-0 m-0' style={{fontSize:"70px",fontWeight:300}}> {counterOn&&<CountUp start={0} end={10} duration={1} delay={0} />}</span><span className='m-0 p-0 ' style={{fontSize:"30px"}}></span></p>
+                    <p className='p-0 m-0'><span className='p-0 m-0' style={{fontSize:"70px",fontWeight:300}}> {counterOn&&<CountUp start={0} end={10} duration={1} delay={0} />}</span><span className='m-0 p-0 ' style={{fontSize:"30px"}}>+</span></p>
                     <span className="label-counter mt-0 pt-0">Years of experience</span>
                     </div>
                     
@@ -152,7 +170,7 @@ const Home = () => {
       {/* =========================================== */}
       <CallBack/>
       {/* =============================================================== */}
-        <Team/>
+        {/* <Team/> */}
         {/* =============================== */}
       <WhyChooseUs/>
       {/* ================================ */}

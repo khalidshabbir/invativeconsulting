@@ -46,9 +46,9 @@ const Footer = () => {
               <div className="footer-col-2">
                 <h3 className="text-white">Contact us</h3>
                 <div className="border-2-side">
-                  <p>{getdata.location}</p>
-                  <p><span>Phone: +{getdata.phone}</span></p>
-                  <a href={`https://mail.google.com/mail/?view=cm&to=${getdata.email}`} target="_blank" rel="noreferrer"><span>Email: {getdata.email}</span></a>
+                  <p>{getdata?.location}</p>
+                  <p><span>Phone: +{getdata?.phone}</span></p>
+                  <a href={`https://mail.google.com/mail/?view=cm&to=${getdata?.email}`} target="_blank" rel="noreferrer"><span>Email: {getdata?.email}</span></a>
                 </div>
               </div>
               <div className="footer-col-3">

@@ -14,6 +14,7 @@ import { IoIosCall } from 'react-icons/io'
 import SocialIcons from '../components/socialsIcons/SocialIcons';
 import { base_url } from '../utils/base_url';
 import axios from 'axios'
+import CircularProgress from '@mui/material/CircularProgress';
 const validationSchema = Yup.object({
   name: Yup.string().required('Name is required'),
   email: Yup.string().email('Invalid email').required('Email is required'),
@@ -30,14 +31,16 @@ const initialValues = {
 const Contactus = () => {
   const [getdata, setdata] = useState([]);
   const [loading, setloading] = useState(false)
+  const [loadingdata,setloadingdata]=useState(false)
   const getdataFunciton = async () => {
+    setloadingdata(false)
     const endpoint = `${base_url}/getcontactus`
     try {
       const response = await axios.get(endpoint);
       const data = response.data.contactus;
 
       setdata(data)
-
+      setloadingdata(true)
     } catch (error) {
 
     }
@@ -144,21 +147,22 @@ const Contactus = () => {
             </div> {/* End col */}
             <div className="col-12 col-lg-4 right-contact mt-5 mt-lg-0">
               {
-                loading ? <div>
-
-                </div> : <div className='contactinfo'>
+                <div className='contactinfo'>
                   <h4>Contact Info</h4>
                   <p>
                     IBCI is a renowned international consulting firm committed to empowering clients with tailored financial management solutions.
                   </p>
-                  <ul className="address">
+                  {
+                   loadingdata?   <ul className="address">
                     <li className='cursor-pointer'><p><FaHome />&nbsp;&nbsp; {getdata.location}</p></li>
                     <li className='cursor-pointer'><p><IoIosCall />&nbsp;&nbsp;+{getdata.phone}
                     </p></li>
                     <li className='cursor-pointer'><p><IoIosCall /> &nbsp;+{getdata.phone1}</p></li>
                     <a className='text-dark' href={`https://mail.google.com/mail/?view=cm&to=${getdata.email}`} target="_blank" rel="noreferrer"> <li className='cursor-pointer'><p><FiMail />&nbsp;&nbsp;{getdata.email}</p></li></a>
                     <li className='cursor-pointer'><p><BiTime />&nbsp;&nbsp; {getdata.timing}</p></li>
-                  </ul>
+                  </ul>:<div className='my-5 d-flex align-items-center justify-content-center'><CircularProgress /></div>
+                  }
+               
                 </div>
               }
 

@@ -6,8 +6,7 @@ import Logo from '../Logo'
 import "./Navbar.css"
 import Socials from '../socialsIcons/SocialIcons'
 import { MdKeyboardArrowDown } from "react-icons/md"
-import Topbar from "../Topbar/Topbar";
-import { Link,NavLink } from "react-router-dom";
+import {NavLink } from "react-router-dom";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -75,17 +74,17 @@ export default function Navbar() {
                 <NavLink to="/projects">
                   <div className="nav-link active " aria-current="page" >
                     Projects
-                    <MdKeyboardArrowDown />
+                    {/* <MdKeyboardArrowDown /> */}
                   </div>
                 </NavLink>
-                <ul className='drop-down-menu p-0 '>
+                {/* <ul className='drop-down-menu p-0 '>
                   <NavLink to="/projects" className="text-white"> <li>Business Plans</li></NavLink>
                   <NavLink to="/projects" className="text-white"> <li>Financial Models</li></NavLink>
                   <NavLink to="/projects" className="text-white"><li>Accounting & Bookkeeping  </li></NavLink>
                   <NavLink to="/projects" className="text-white"><li>Financial Analysis</li></NavLink>
                   <NavLink to="/projects" className="text-white"><li>Project Monitoring</li></NavLink>
               
-                </ul>
+                </ul> */}
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link active" aria-current="page" to="/partners">
@@ -177,7 +176,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/projects">
+                <a className="nav-link active" aria-current="page" href="/contactus">
                   Contact us
 
                 </a>

@@ -52,7 +52,7 @@ const Partners = () => {
       };
   return (
     <>
-          <section className='bg-grey py-5 mt-5'>
+          <section className='bg-grey py-5 '>
               <div className="container px-lg-5">
                   <div className="row">
                       <div className=" col-sm-12 col-md-12 col-lg-12">
@@ -67,53 +67,53 @@ const Partners = () => {
                           <div id="owl-partners" className="owl-carousel owl-theme owl-partners py-4 clearfix">
                           <Slider {...settings} ref={sliderRef}>
                           <div className="item">
-                                  <a href="#">
-                                      <img src="images/Partner/1.jpg" className="img-responsive" alt="Image" />
+                                  <a href="/#">
+                                      <img src="images/Partner/1.jpg" className="img-responsive" alt="/partnerimg" />
                                   </a>
                               </div>
                               <div className="item">
-                                  <a href="#">
-                                      <img src="images/Partner/2.jpg" className="img-responsive" alt="Image" />
+                                  <a href="/#">
+                                      <img src="images/Partner/2.jpg" className="img-responsive" alt="/partnerimg" />
                                   </a>
                               </div>
                               <div className="item">
-                                  <a href="#">
-                                      <img src="images/Partner/3.jpg" className="img-responsive" alt="Image" />
+                                  <a href="/#">
+                                      <img src="images/Partner/3.jpg" className="img-responsive" alt="/partnerimg" />
                                   </a>
                               </div>
                               <div className="item">
-                                  <a href="#">
-                                      <img src="images/Partner/4.jpg" className="img-responsive" alt="Image" />
+                                  <a href="/#">
+                                      <img src="images/Partner/4.jpg" className="img-responsive" alt="/partnerimg" />
                                   </a>
                               </div>
                               <div className="item">
-                                  <a href="#">
-                                      <img src="images/Partner/5.jpg" className="img-responsive" alt="Image" />
+                                  <a href="/#">
+                                      <img src="images/Partner/5.jpg" className="img-responsive" alt="/partnerimg" />
                                   </a>
                               </div>
                               <div className="item">
-                                  <a href="#">
-                                      <img src="images/Partner/1.jpg" className="img-responsive" alt="Image" />
+                                  <a href="/#">
+                                      <img src="images/Partner/1.jpg" className="img-responsive" alt="/partnerimg" />
                                   </a>
                               </div>
                               <div className="item">
-                                  <a href="#">
-                                      <img src="images/Partner/2.jpg" className="img-responsive" alt="Image" />
+                                  <a href="/#">
+                                      <img src="images/Partner/2.jpg" className="img-responsive" alt="/partnerimg" />
                                   </a>
                               </div>
                               <div className="item">
-                                  <a href="#">
-                                      <img src="images/Partner/3.jpg" className="img-responsive" alt="Image" />
+                                  <a href="/#">
+                                      <img src="images/Partner/3.jpg" className="img-responsive" alt="/partnerimg" />
                                   </a>
                               </div>
                               <div className="item">
-                                  <a href="#">
-                                      <img src="images/Partner/4.jpg" className="img-responsive" alt="Image" />
+                                  <a href="/#">
+                                      <img src="images/Partner/4.jpg" className="img-responsive" alt="/partnerimg" />
                                   </a>
                               </div>
                               <div className="item">
-                                  <a href="#">
-                                      <img src="images/Partner/5.jpg" className="img-responsive" alt="Image" />
+                                  <a href="/#">
+                                      <img src="images/Partner/5.jpg" className="img-responsive" alt="/partnerimg" />
                                   </a>
                               </div>
                           </Slider>

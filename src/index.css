@@ -78,9 +78,31 @@ background-color: var(--hovercolor) !important;
 .text-align-justify{
   text-align: justify !important;
 }
-
+.text-color-primary{
+  color: var(--primary) !important;
+}
+.text-color-secondary{
+  color: var(--topbarcolor);
+}
 .logo-text-color{
   color: var(--primary) !important;
+}
+/* ============================================================ */
+
+.project-nav{
+  
+  color: var(--secondary) !important;
+  padding: 10px 20px !important;
+}
+.project-nav.active{
+  background: var(--primary);
+  color: white !important;
+}
+.project-nav:hover{
+  
+ 
+  background: var(--primary);
+  color: white !important;
 }
 /* ==========================Scroll Bar====================== */
 /* width */
@@ -107,51 +129,12 @@ background-color: var(--hovercolor) !important;
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
 } 
-
-
-.call-back-form .css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input {
-background-color: #3b3b3bd2 !important;
-border-radius: 5px;
-color: white !important;
+/* ===================================================== */
+.item-services img {
+height: 230px !important;
 
 }
-.call-back-form .css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input:focus{
-  border-color: #01ABC8 !important;
+.item-services .services-3-column-img-container {
+  height: 270px !important;
 }
-.call-back-form .css-z1o969-MuiInputBase-root-MuiOutlinedInput-root:focus{
-  border-color: #01ABC8 !important;
-}
-.call-back-form .css-z1o969-MuiInputBase-root-MuiOutlinedInput-root:active{
-  border-color: #01ABC8 !important;
-}
-.call-back-form .css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input:active{
-  border-color: #01ABC8 !important;
-}
-.call-back-form .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
-border-color: #01ABC8 !important;
-}
-.call-back-form .css-1pysi21-MuiFormLabel-root-MuiInputLabel-root.Mui-error {
-color: white !important;
-}
-.call-back-form .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
-  color: white !important;
-}
-.call-back-form .css-k4qjio-MuiFormHelperText-root.Mui-error {
-color: #01ABC8 !important;
 
-}
-.call-back-form .css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input {
-color: white !important;
-}
-.call-back-form .css-z1o969-MuiInputBase-root-MuiOutlinedInput-root {
-border: 1px #01ABC8 !important;
-background-color: #373838 !important;
-color: white !important;
-}
-.call-back-form .css-z1o969-MuiInputBase-root-MuiOutlinedInput-root.Mui-error {
-  outline: #01ABC8 !important;
-}
-.call-back-form .css-12tl3rr-MuiInputBase-input-MuiOutlinedInput-input:focus {
-outline: #01ABC8 !important;
-border-color: #01ABC8 !important;
-}
